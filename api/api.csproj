@@ -1,9 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
         <TargetFramework>net10.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-    </PropertyGroup>
+      <UserSecretsId>987686e7-f982-4caf-80b3-1cb1cf9bcfc5</UserSecretsId>
+  </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\be\be.csproj" />
+      <ProjectReference Include="..\db\db.csproj" />
+      <ProjectReference Include="..\Infra\Infra.csproj" />
+    </ItemGroup>
 
 </Project>
